@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Document</title>
-		<script type="module" src="/modules/weatherpage.mjs"></script>
+		<script type="module" src="/modules/forms.mjs"></script>
 	</head>
 	<body>
 		<header>Header Area</header>
@@ -12,13 +12,32 @@
 		<section>
 			<section id="weathercard1">
 				<h2>Location One</h2>
-				<p id="location1">location1</p>
-				<p id="temperature1">temp1</p>
+				<form id="locationOneForm">
+					<label for="locationSearchOne"></label>
+					<input
+						type="text"
+						id="locationSearchOne"
+						name="locationSearchOne"
+						placeholder="Location Search" />
+					<button type="submit">Enter Location</button>
+				</form>
+				<p id="locationOne">location1</p>
+				<p id="temperatureOne">temp1</p>
 			</section>
+
 			<section id="weathercard2">
 				<h2>Location Two</h2>
-				<p id="location2">location2</p>
-				<p id="temperature2">temp2</p>
+				<form id="locationTwoForm">
+					<label for="locationSearchTwo"></label>
+					<input
+						type="text"
+						id="locationSearchTwo"
+						name="locationSearchTwo"
+						placeholder="Location Search" />
+					<button type="submit">Enter Location</button>
+				</form>
+				<p id="locationTwo">location1</p>
+				<p id="temperatureTwo">temp1</p>
 			</section>
 		</section>
 
