@@ -17,12 +17,12 @@ async function subLocationOne() {
 	if (data.results && data.results.length > 0) {
 		const { latitude, longitude, name, country } = data.results[0];
 		locationOne.textContent = " Loading...";
-		locationOne.textContent = `Found ${name}, ${country}: Lat ${latitude}, Lon ${longitude}`;
+		locationOne.innerHTML = `Found ${name}<br>${country}<br>Lat ${latitude}<br>Long ${longitude}`;
 		console.log(
-			`Found ${name}, ${country}: Lat ${latitude}, Lon ${longitude}`,
+			`Found ${name}, ${country}: Lat ${latitude}, Long ${longitude}`,
 		);
 		tempOne.textContent = "Loading...";
-		tempOne.textContent = `${Math.round(await weatherFetch(latitude, longitude))} Fahrenheit`;
+		tempOne.textContent = `${Math.round(await weatherFetch(latitude, longitude))} F`;
 
 		// You can now plug these directly into your weather API params!
 	} else {
@@ -47,12 +47,12 @@ async function subLocationTwo() {
 	if (data.results && data.results.length > 0) {
 		const { latitude, longitude, name, country } = data.results[0];
 		locationTwo.textContent = " Loading...";
-		locationTwo.textContent = `Found ${name}, ${country}: Lat ${latitude}, Lon ${longitude}`;
+		locationTwo.innerHTML = `Found ${name}<br>${country}<br>Lat ${latitude}<br>Long ${longitude}`;
 		console.log(
-			`Found ${name}, ${country}: Lat ${latitude}, Lon ${longitude}`,
+			`Found ${name}, ${country}: Lat ${latitude}, Long ${longitude}`,
 		);
 		tempTwo.textContent = "Loading...";
-		tempTwo.textContent = `${Math.round(await weatherFetch(latitude, longitude))} Fahrenheit`;
+		tempTwo.textContent = `${Math.round(await weatherFetch(latitude, longitude))} F`;
 
 		// You can now plug these directly into your weather API params!
 	} else {

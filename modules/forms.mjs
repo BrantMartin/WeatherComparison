@@ -1,14 +1,17 @@
-import { subLocationOne,subLocationTwo } from "./location.mjs";
+import { subLocationOne, subLocationTwo } from "./location.mjs";
+import { compareCards } from "./animation.mjs";
 
 const locationOneForm = document.getElementById("locationOneForm");
+const locationTwoForm = document.getElementById("locationTwoForm");
 
-locationOneForm.addEventListener("submit", (event) => {
+locationOneForm.addEventListener("submit", async (event) => {
 	event.preventDefault();
-	subLocationOne();
+	await subLocationOne();
+	compareCards();
 });
 
-locationTwoForm.addEventListener("submit", (event) => {
+locationTwoForm.addEventListener("submit", async (event) => {
 	event.preventDefault();
-	subLocationTwo();
+	await subLocationTwo();
+	compareCards();
 });
-
