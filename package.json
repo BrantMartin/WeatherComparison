@@ -1,0 +1,10 @@
+{
+	"type": "module",
+	"scripts": {
+		"start": "vite"
+	},
+	"dependencies": {
+		"openmeteo": "^1.2.3",
+		"vite": "^8.3.4"
+	}
+}
