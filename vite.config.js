@@ -1,3 +1,3 @@
 export default {
-    "base": "/<Repo>/"
+    "base": "/WeatherComparison/"
 }
